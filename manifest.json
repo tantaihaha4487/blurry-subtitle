@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Blury",
+  "description": "test",
+  "version": "1.0",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "blury@example.com"
+    }
+  }
+}
