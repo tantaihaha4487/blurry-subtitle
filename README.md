@@ -1,4 +1,4 @@
-# Blury Firefox Addon
+# Blury Firefox extension
 
 This Firefox addon enhances the YouTube viewing experience by styling the subtitles.
 
