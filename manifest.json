@@ -1,10 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "Blury",
-  "description": "test",
-  "version": "1.0",
+  "name": "Blurry-subtitile",
+  "description": "Extension that make your youtube subtitle blur.",
+  "version": "1.1",
   "icons": {
-    "64": "icons/icon.png"
+    "64": "icons/icon.jpg"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon.jpg",
+    "default_title": "Blurry Subtitle Settings",
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {
@@ -18,7 +26,12 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "blury@example.com"
+      "id": "blury@thanachot.com",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   }
 }
